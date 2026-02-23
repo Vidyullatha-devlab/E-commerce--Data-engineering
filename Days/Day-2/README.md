@@ -1,5 +1,5 @@
- Day 2 – Silver & Gold Layer Feature Engineering (Delta Lake)
- Objective
+**Day 2 – Silver & Gold Layer Feature Engineering (Delta Lake)**
+**Objective**
 
 Build a clean, production-style data pipeline using the Medallion Architecture:
 
@@ -9,7 +9,7 @@ Silver → Cleaned, user-level feature aggregation
 
 Gold → Analytics-ready feature dataset
 
-The goal is to:
+**The goal is to:**
 
 Create a user-level feature table.
 
@@ -21,13 +21,13 @@ Validate feature quality.
 
 Promote validated features to the Gold layer.
 
-Architecture
+**Architecture**
 
 Bronze → Raw events (event-level granularity)
 Silver → Aggregated user-level features
 Gold → Business-ready, validated feature table
 
-Bronze Layer
+**Bronze Layer**
 
 Raw ecommerce events are stored in Delta format.
 
@@ -43,12 +43,12 @@ price
 
 timestamp
 
-Silver Layer – User Feature Engineering
-Goal
+**Silver Layer – User Feature Engineering**
+**Goal**
 
 Aggregate event-level data into one row per user.
 
-Features Created
+**Features Created**
 
 total_events
 
@@ -62,9 +62,9 @@ first_event_time
 
 last_event_time
 
-Logic
+**Logic**
 
-Aggregation ensures:
+**Aggregation ensures:**
 
 One row per user
 
@@ -74,8 +74,8 @@ Clean numeric features
 
 Null handling
 
-Gold Layer – Business-Ready Dataset
-Goal
+**Gold Layer – Business-Ready Dataset**:
+**Goal**
 
 Prepare final dataset optimized for analytics and ML.
 
@@ -90,7 +90,7 @@ Cast proper data types
 Standardize metrics
 
 
-Key Engineering Principles Applied
+**Key Engineering Principles Applied**
 
 Aggregation guarantees uniqueness
 
