@@ -1,6 +1,5 @@
-DAY 1 (20/02/26) – Delta Conversion & Optimization
-
-Tasks
+**DAY 1 (20/02/26) – Delta Conversion & Optimization**
+**Tasks**
 
 Convert raw CSV to Delta format
 
@@ -26,7 +25,7 @@ Compact small files for better read performance
 
 Compare query performance before and after optimization
 
-Notes
+**Notes**
 
 Delta tables support ACID transactions, so repeated writes won’t corrupt data.
 
