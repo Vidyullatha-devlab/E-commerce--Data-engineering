@@ -1,24 +1,28 @@
 **Day 3 – Parameterization, Jobs, and Scheduling (Productionizing the Pipeline)**
-This day focuses on turning notebooks into production-ready pipelines using parameterization, modular design, and scheduling.
+This day focuses on turning notebooks into production-ready systems by introducing:
 
-The goal is to:
+Dynamic inputs (parameters)
 
-Make notebooks dynamic (process different dates)
+Modular transformation logic
 
-Modularize transformation logic
+Job orchestration
 
-Use jobs for orchestration
+Automated scheduling
 
-Schedule daily execution
+These ideas move you from manual execution to repeatable pipelines.
 
-This aligns with the Medallion architecture built in Day 1 and Day 2.
+**Key Concept: Parameterization**
+A parameterized notebook can change behavior based on input.Instead of hardcoding values (like dates), we can pass them at runtime.
+
+This enables:
+a. Daily processing
+b. Backfills
+c. Environment flexibility
+d. Reusability
+e. Cleaner code
+
+we used Widgets which are interactive parameters inside notebook to accept inputs.with this parameteriztion,pipelines adapt,jobs run dynamically,Syatems scale.
 
 
-Notes:
-Bronze stores raw events.
-Silver aggregates per user daily.
-Gold derives business features.
-Job orchestrates execution.
-Schedule removes human dependency.
 
-This is no longer a notebook exercise instead it is a production-grade Medallion architecture for ecommerce user analytics.
+
