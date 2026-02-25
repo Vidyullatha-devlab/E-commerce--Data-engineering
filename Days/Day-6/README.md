@@ -30,3 +30,13 @@ evaluation comparison
 0.5 → random
 0.7 → often acceptable in behavioral prediction
 AUC is preferred under class imbalance.Accuracy may mislead.
+
+
+**Workflow**
+1.Prepare data (fill nulls, vectorize)
+2.Split train/test
+3.Train Logistic
+4.Train RandomForest
+5.Evaluate AUC
+6.Compare
+7.Tune 
