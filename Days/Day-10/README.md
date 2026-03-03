@@ -37,3 +37,17 @@ Use when:
 dataset queried repeatedly
 iterative analytics
 ML pipelines
+
+**Important Observation and learning from Day 10:**
+Databricks Serverless compute does not support table-level persistence (CACHE TABLE / PERSIST TABLE). Even DataFrame-level caching may be restricted depending on the environment configuration.
+
+In my examle:Example:
+Before cache: ~0.56s
+After cache: ~0.48s
+
+This improvement occurred even after removing explicit .cache() calls.
+This explains the performance optimization is due to executor warm up,deltalake metadata caching.
+This leads to a conclusion that Spark applies multiple layers of automatic optimization beyond explicit caching.
+Caching behavior is environment-dependent.
+Distributed systems perform implicit optimizations.
+Performance improvements are not always caused by manual caching.
