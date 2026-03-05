@@ -43,11 +43,10 @@ This project is part of my **learning journey and portfolio-building exercise** 
 ## 📅 Challenge Timeline
 
 - **Pre-Day / Feb 18:** Setup & prerequisites  
-- **Day 1 (Feb 20):** Data understanding & quality analysis  
-- **Day 2 (Feb 21):** Event funnel & user behavior  
-- **Day 3-6 (Feb 22–25):** Feature engineering & optimization  
-- **Day 7-10 (Feb 26–Mar 1):** Advanced analytics  
-- **Day 11-14 (Mar 2–5):** Reporting, dashboards & documentation  
+- **PHASE 1:** BETTER DATA ENGINEERING (Days 1–4)
+- **PHASE 2:** AI SYSTEM BUILDING (Days 5–9)
+- **PHASE 3:** PERFORMANCE & PRODUCTION THINKING (Days 10–14)
+  
 
 > Each day will have a detailed **daily log README** to track learning and progress.
 
@@ -77,4 +76,4 @@ This project is part of my **learning journey and portfolio-building exercise** 
 
 Vidyullatha Polavarapu
 Data Engineer / AI Enthusiast  
-#14DayAIChallenge#DatabrickswithIDC#codebasics#indiandataclub#databricks
+**#14DayAIChallenge#DatabrickswithIDC#codebasics#indiandataclub#databricks**
